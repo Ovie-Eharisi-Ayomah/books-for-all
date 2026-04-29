@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import kidsReading from '../assets/kidsReading.jpeg';
 
 const Home = () => {
   return (
     <div>
       {/* Hero Section */}
       <section className="hero">
-        <div className="hero-bg" style={{ backgroundImage: 'url("src/assets/kidsReading.jpeg")' }}>
+        <div className="hero-bg" style={{ backgroundImage: `url(${kidsReading})` }}>
           <div className="hero-overlay"></div>
         </div>
 
@@ -66,7 +67,7 @@ const Home = () => {
       </section>
 
       <section className="donation-cta">
-        <div className="page-hero-bg" style={{ backgroundImage: 'url("src/assets/kidsReading.jpeg")' }}>
+        <div className="page-hero-bg" style={{ backgroundImage: `url(${kidsReading})` }}>
           <div className="page-hero-overlay"></div>
         </div>
         <div className="container">

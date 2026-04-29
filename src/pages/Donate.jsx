@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Heart, Globe, Users, Briefcase } from 'lucide-react';
+import kidsReading from '../assets/kidsReading.jpeg';
 
 const Donate = () => {
   const [amount, setAmount] = useState('50');
@@ -15,7 +16,7 @@ const Donate = () => {
   return (
     <div className="page-wrapper">
       <section className="page-hero">
-        <div className="page-hero-bg" style={{ backgroundImage: 'url("/images/donate-hero-placeholder.jpg")' }}>
+        <div className="page-hero-bg" style={{ backgroundImage: `url(${kidsReading})` }}>
           <div className="page-hero-overlay"></div>
         </div>
         <div className="container">

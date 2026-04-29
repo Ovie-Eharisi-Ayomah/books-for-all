@@ -1,20 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Target, Heart, Shield } from 'lucide-react';
-
-
+import kidsReading from '../assets/kidsReading.jpeg';
+import OsaOyegunHeadshot from '../assets/OsaOyegunHeadshot.jpeg';
+import ThelmaHeadshot from '../assets/ThelmaHeadshot.jpeg';
+import UzoHeadshot from '../assets/UzoHeadshot.jpeg';
 
 const About = () => {
   const team = [
-    { name: 'Osa Oyegun', role: 'Founder', bio: 'Osa Oyegun is an experienced librarian and educator with 17 years of international experience. Osa believes that reading empowers children to learn about the world, understand different perspectives, and think critically. Literacy is a human right, and Nigerian children have the right to education, freedom, and progress. Together, we can help to ensure that their futures are assured.', photo: 'src/assets/OsaOyegunHeadshot.jpeg' },
-    { name: 'Thelma Murray-Bruce', role: 'Secretary / Trustee', bio: 'First-Class graduate of Gregory University, Uturu. Head of Legal and Group Secretary at Inovatech Consulting — providing legal research, drafting, compliance advisory, and stakeholder coordination.', photo: 'src/assets/ThelmaHeadshot.jpeg' },
-    { name: 'Eneh Uzochukwu', role: 'Trustee', bio: 'Economics graduate from Coal City University, Enugu. Project manager actively involved in multiple volunteer initiatives across Nigeria.', photo: 'src/assets/UzoHeadshot.jpeg' },
+    { name: 'Osa Oyegun', role: 'Founder', bio: 'Osa Oyegun is an experienced librarian and educator with 17 years of international experience. Osa believes that reading empowers children to learn about the world, understand different perspectives, and think critically. Literacy is a human right, and Nigerian children have the right to education, freedom, and progress. Together, we can help to ensure that their futures are assured.', photo: OsaOyegunHeadshot },
+    { name: 'Thelma Murray-Bruce', role: 'Secretary / Trustee', bio: 'First-Class graduate of Gregory University, Uturu. Head of Legal and Group Secretary at Inovatech Consulting — providing legal research, drafting, compliance advisory, and stakeholder coordination.', photo: ThelmaHeadshot },
+    { name: 'Eneh Uzochukwu', role: 'Trustee', bio: 'Economics graduate from Coal City University, Enugu. Project manager actively involved in multiple volunteer initiatives across Nigeria.', photo: UzoHeadshot },
   ];
 
   return (
     <div className="page-wrapper">
       <section className="page-hero">
-        <div className="page-hero-bg" style={{ backgroundImage: 'url("src/assets/kidsReading.jpeg")' }}>
+        <div className="page-hero-bg" style={{ backgroundImage: `url(${kidsReading})` }}>
           <div className="page-hero-overlay"></div>
         </div>
         <div className="container">
@@ -43,7 +45,7 @@ const About = () => {
           {team.map((member, idx) => (
             <div key={idx} className="team-card">
               <div className="team-photo-placeholder">
-                <img src={member.photo} alt={member.name} />
+                <img src={member.photo === OsaOyegunHeadshot ? OsaOyegunHeadshot : member.photo === ThelmaHeadshot ? ThelmaHeadshot : UzoHeadshot} alt={member.name} />
               </div>
               <h3>{member.name}</h3>
               <p className="team-role">{member.role}</p>
@@ -123,7 +125,7 @@ const About = () => {
 
 
       <section className="donation-cta">
-        <div className="page-hero-bg" style={{ backgroundImage: 'url("src/assets/kidsReading.jpeg")' }}>
+        <div className="page-hero-bg" style={{ backgroundImage: `url(${kidsReading})` }}>
           <div className="page-hero-overlay"></div>
         </div>
         <div className="container">

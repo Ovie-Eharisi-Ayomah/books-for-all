@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import kidsReading from '../assets/kidsReading.jpeg';
 
 const Mission = () => {
   return (
     <div className="page-wrapper">
       <section className="page-hero">
-        <div className="page-hero-bg" style={{ backgroundImage: 'url("src/assets/kidsReading.jpeg")' }}>
+        <div className="page-hero-bg" style={{ backgroundImage: `url(${kidsReading})` }}>
           <div className="page-hero-overlay"></div>
         </div>
         <div className="container">
@@ -103,7 +104,7 @@ const Mission = () => {
       </section>
 
       <section className="donation-cta">
-        <div className="page-hero-bg" style={{ backgroundImage: 'url("src/assets/kidsReading.jpeg")' }}>
+        <div className="page-hero-bg" style={{ backgroundImage: `url(${kidsReading})` }}>
           <div className="page-hero-overlay"></div>
         </div>
         <div className="container">
