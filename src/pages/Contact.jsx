@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, MapPin, Phone, Globe, Heart, Users } from 'lucide-react';
+import kidsReading from '../assets/kidsReading.jpeg';
 
 const Contact = () => {
   const handleSubmit = (e) => {
@@ -11,7 +12,7 @@ const Contact = () => {
   return (
     <div className="page-wrapper">
       <section className="page-hero">
-        <div className="page-hero-bg" style={{ backgroundImage: 'url("/images/contact-hero-placeholder.jpg")' }}>
+        <div className="page-hero-bg" style={{ backgroundImage: `url(${kidsReading})` }}>
           <div className="page-hero-overlay"></div>
         </div>
         <div className="container">
@@ -149,7 +150,7 @@ const Contact = () => {
 
 
       <section className="donation-cta">
-        <div className="page-hero-bg" style={{ backgroundImage: 'url("/images/contact-donate-cta-placeholder.jpg")' }}>
+        <div className="page-hero-bg" style={{ backgroundImage: `url(${kidsReading})` }}>
           <div className="page-hero-overlay"></div>
         </div>
         <div className="container">
