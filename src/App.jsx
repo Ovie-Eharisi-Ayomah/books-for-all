@@ -52,7 +52,7 @@ function App() {
       CRITICAL: The basename prop tells React Router that the app 
       is hosted at /books-for-all/ and not at the root domain.
     */
-    <Router basename="/books-for-all">
+    <Router>
       <Navigation />
       <main>
         <Routes>
